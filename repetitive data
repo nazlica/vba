@@ -1,0 +1,5 @@
+For i = 500 To 1 Step -1
+If WorksheetFunction.CountIf(Range("A:A"), Cells(i, "A")) > 1 Then
+Rows(i).ClearContents
+End If
+Next i
